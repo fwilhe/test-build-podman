@@ -47,4 +47,4 @@ jobs:
 
 
     - name: podman run
-      run: podman run --arch=arm64 fedora uname -a
+      run: podman run --rm --security-opt seccomp=unconfined --security-opt apparmor=unconfined --security-opt label=disable --read-only --arch=arm64 fedora uname -a

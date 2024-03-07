@@ -38,4 +38,4 @@ jobs:
 
 
     - name: podman run
-      run: podman run fedora uname -a
+      run: podman run --rm --security-opt seccomp=unconfined --security-opt apparmor=unconfined --security-opt label=disable --read-only fedora uname -a
