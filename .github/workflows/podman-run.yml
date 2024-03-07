@@ -38,4 +38,4 @@ jobs:
 
 
     - name: podman run
-      run: podman run fedora uname
+      run: podman run fedora uname -a

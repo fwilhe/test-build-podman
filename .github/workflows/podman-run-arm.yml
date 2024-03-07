@@ -47,4 +47,4 @@ jobs:
 
 
     - name: podman run
-      run: podman run --arch=arm64 fedora uname
+      run: podman run --arch=arm64 fedora uname -a
