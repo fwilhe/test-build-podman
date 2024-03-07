@@ -49,4 +49,4 @@ jobs:
         git clone https://github.com/gardenlinux/gardenlinux
         cd gardenlinux
         set -x
-        ./build base-amd64
+        bash -x ./build base-amd64

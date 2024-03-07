@@ -48,4 +48,4 @@ jobs:
         git clone https://github.com/gardenlinux/gardenlinux
         cd gardenlinux
         set -x
-        ./build base-arm64
+        bash -x ./build base-arm64
