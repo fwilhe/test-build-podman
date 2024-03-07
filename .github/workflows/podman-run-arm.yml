@@ -1,4 +1,4 @@
-name: gl arm
+name: Verify if podman run works arm64
 
 on:
   push:
@@ -16,6 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
 
     - name: uname -r
       run: |
@@ -44,7 +45,6 @@ jobs:
         sudo apt-get update
         sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends qemu-user-static
 
-    - run: |
-        git clone https://github.com/gardenlinux/gardenlinux
-        cd gardenlinux
-        ./build base-arm64
+
+    - name: podman run
+      run: podman run --arch=arm64 fedora uname

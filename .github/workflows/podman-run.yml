@@ -1,4 +1,4 @@
-name: Verify if podman build works
+name: Verify if podman run works
 
 on:
   push:
