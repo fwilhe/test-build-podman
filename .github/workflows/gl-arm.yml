@@ -47,4 +47,5 @@ jobs:
     - run: |
         git clone https://github.com/gardenlinux/gardenlinux
         cd gardenlinux
+        set -x
         ./build base-arm64
