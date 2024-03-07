@@ -16,5 +16,26 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+
+    - name: uname -r
+      run: |
+        uname -r
+    
+    
+    - name: crun --version
+      run: |
+        crun --version
+
+
+    - name: podman --version
+      run: |
+        podman --version
+
+    - name: podman info
+      run: |
+        podman info
+
+
     - name: podman run
       run: podman run fedora uname
